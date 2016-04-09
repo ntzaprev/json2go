@@ -1,0 +1,555 @@
+{
+  "datacenters": ["chekmarev9020","local"],
+  "services": [
+    {
+      "Name": "MDG",
+      "Tags": ["loc:/mdg","path:/"],
+      "Instances": [
+        {
+          "Id": "mdg1",
+          "Dc": "chekmarev9020",
+          "Tags":["loc:/mdg","path:/"],
+          "Address": "marketdatadev1.taltrade.com",
+          "Port": "80",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "consul",
+      "Tags": [],
+      "Instances": [
+        {
+          "Id": "consul",
+          "Dc": "chekmarev9020",
+          "Tags":[],
+          "Address": "10.28.51.202",
+          "Port": "8300",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "Analytics-Api",
+      "Tags": ["blue","loc:/api/analytics/v1"],
+      "Instances": [
+        {
+          "Id": "_api_analytics_v1_aecastle01rmq01.awsdev.ezesoftcloud.com_9005",
+          "Dc": "local",
+          "Tags":["blue","loc:/api/analytics/v1"],
+          "Address": "aecastle01rmq01.awsdev.ezesoftcloud.com",
+          "Port": "9005",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "BrokerProfileAPI",
+      "Tags": ["loc:/api/brokerprofile/v1"],
+      "Instances": [
+        {
+          "Id": "_api_brokerprofile_v1_3025",
+          "Dc": "local",
+          "Tags":["loc:/api/brokerprofile/v1"],
+          "Address": "aecastle01gwy01.awsdev.ezesoftcloud.com",
+          "Port": "3025",
+          "Status": "passing"
+        },
+        {
+          "Id": "_api_brokerprofile_v1_3025",
+          "Dc": "local",
+          "Tags":["loc:/api/brokerprofile/v1"],
+          "Address": "aecastle01gwy02.awsdev.ezesoftcloud.com",
+          "Port": "3025",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "BrokerReview-Api",
+      "Tags": ["blue","loc:/api/brokerreview/v1"],
+      "Instances": [
+        {
+          "Id": "_api_brokerreview_v1_aecastle01rmq01.awsdev.ezesoftcloud.com_9007",
+          "Dc": "local",
+          "Tags":["blue","loc:/api/brokerreview/v1"],
+          "Address": "aecastle01rmq01.awsdev.ezesoftcloud.com",
+          "Port": "9007",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "CalculationEngineTest-Api",
+      "Tags": ["blue","loc:/api/calculationenginetest/v1"],
+      "Instances": [
+        {
+          "Id": "_api_calculationenginetest_v1_aecastle01rmq01.awsdev.ezesoftcloud.com_9009",
+          "Dc": "local",
+          "Tags":["blue","loc:/api/calculationenginetest/v1"],
+          "Address": "aecastle01rmq01.awsdev.ezesoftcloud.com",
+          "Port": "9009",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "Compliance-Api",
+      "Tags": ["blue","loc:/api/compliance/v1"],
+      "Instances": [
+        {
+          "Id": "_api_compliance_v1_aecastle01rmq01.awsdev.ezesoftcloud.com_9011",
+          "Dc": "local",
+          "Tags":["blue","loc:/api/compliance/v1"],
+          "Address": "aecastle01rmq01.awsdev.ezesoftcloud.com",
+          "Port": "9011",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "CorporateActionMaster-Api",
+      "Tags": ["blue","loc:/api/corporateactionmaster/v2"],
+      "Instances": [
+        {
+          "Id": "_api_corporateactionmaster_v2_aecastle01rmq01.awsdev.ezesoftcloud.com_9013",
+          "Dc": "local",
+          "Tags":["blue","loc:/api/corporateactionmaster/v2"],
+          "Address": "aecastle01rmq01.awsdev.ezesoftcloud.com",
+          "Port": "9013",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "DataServices-Api",
+      "Tags": ["blue","loc:/api/dataservices/v1"],
+      "Instances": [
+        {
+          "Id": "_api_dataservices_v1_aecastle01rmq01.awsdev.ezesoftcloud.com_9017",
+          "Dc": "local",
+          "Tags":["blue","loc:/api/dataservices/v1"],
+          "Address": "aecastle01rmq01.awsdev.ezesoftcloud.com",
+          "Port": "9017",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "Datamanagement-Api",
+      "Tags": ["blue","loc:/api/datamanagement/v1"],
+      "Instances": [
+        {
+          "Id": "_api_datamanagement_v1_aecastle01rmq01.awsdev.ezesoftcloud.com_9015",
+          "Dc": "local",
+          "Tags":["blue","loc:/api/datamanagement/v1"],
+          "Address": "aecastle01rmq01.awsdev.ezesoftcloud.com",
+          "Port": "9015",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "Etl-Api",
+      "Tags": ["blue","loc:/api/etl/v1"],
+      "Instances": [
+        {
+          "Id": "_api_etl_v1_aecastle01rmq01.awsdev.ezesoftcloud.com_9019",
+          "Dc": "local",
+          "Tags":["blue","loc:/api/etl/v1"],
+          "Address": "aecastle01rmq01.awsdev.ezesoftcloud.com",
+          "Port": "9019",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "ExternalGateway",
+      "Tags": ["blue","loc:/Gateway"],
+      "Instances": [
+        {
+          "Id": "_Gateway_aecastle01gwy01.awsdev.ezesoftcloud.com_4000",
+          "Dc": "local",
+          "Tags":["blue","loc:/Gateway"],
+          "Address": "aecastle01gwy01.awsdev.ezesoftcloud.com",
+          "Port": "4000",
+          "Status": "passing"
+        },
+        {
+          "Id": "_Gateway_aecastle01gwy02.awsdev.ezesoftcloud.com_4000",
+          "Dc": "local",
+          "Tags":["blue","loc:/Gateway"],
+          "Address": "aecastle01gwy02.awsdev.ezesoftcloud.com",
+          "Port": "4000",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "Ibor-Api",
+      "Tags": ["blue","loc:/api/ibor/v2"],
+      "Instances": [
+        {
+          "Id": "_api_ibor_v2_aecastle01rmq01.awsdev.ezesoftcloud.com_9021",
+          "Dc": "local",
+          "Tags":["blue","loc:/api/ibor/v2"],
+          "Address": "aecastle01rmq01.awsdev.ezesoftcloud.com",
+          "Port": "9021",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "MarketDataGateway",
+      "Tags": ["loc:/mdg/","path:/"],
+      "Instances": [
+        {
+          "Id": "_mdg__80",
+          "Dc": "local",
+          "Tags":["loc:/mdg/","path:/"],
+          "Address": "mdg-demo.ezesoftcloud.com",
+          "Port": "80",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "Platform-Api",
+      "Tags": ["blue","loc:/api/platform/v1"],
+      "Instances": [
+        {
+          "Id": "_api_platform_v1_aecastle01rmq01.awsdev.ezesoftcloud.com_9023",
+          "Dc": "local",
+          "Tags":["blue","loc:/api/platform/v1"],
+          "Address": "aecastle01rmq01.awsdev.ezesoftcloud.com",
+          "Port": "9023",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "PriceMaster-Api",
+      "Tags": ["blue","loc:/api/pricemaster/v2"],
+      "Instances": [
+        {
+          "Id": "_api_pricemaster_v2_aecastle01rmq01.awsdev.ezesoftcloud.com_9025",
+          "Dc": "local",
+          "Tags":["blue","loc:/api/pricemaster/v2"],
+          "Address": "aecastle01rmq01.awsdev.ezesoftcloud.com",
+          "Port": "9025",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "ReferenceData-Api",
+      "Tags": ["blue","loc:/api/referencedata/v1"],
+      "Instances": [
+        {
+          "Id": "_api_referencedata_v1_aecastle01rmq01.awsdev.ezesoftcloud.com_9027",
+          "Dc": "local",
+          "Tags":["blue","loc:/api/referencedata/v1"],
+          "Address": "aecastle01rmq01.awsdev.ezesoftcloud.com",
+          "Port": "9027",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "Reporting-Api",
+      "Tags": ["blue","loc:/api/reporting/v1"],
+      "Instances": [
+        {
+          "Id": "_api_reporting_v1_aecastle01rmq01.awsdev.ezesoftcloud.com_9029",
+          "Dc": "local",
+          "Tags":["blue","loc:/api/reporting/v1"],
+          "Address": "aecastle01rmq01.awsdev.ezesoftcloud.com",
+          "Port": "9029",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "RequestMakerTest-Api",
+      "Tags": ["blue","loc:/api/requestmakertest/v1"],
+      "Instances": [
+        {
+          "Id": "_api_requestmakertest_v1_aecastle01rmq01.awsdev.ezesoftcloud.com_9031",
+          "Dc": "local",
+          "Tags":["blue","loc:/api/requestmakertest/v1"],
+          "Address": "aecastle01rmq01.awsdev.ezesoftcloud.com",
+          "Port": "9031",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "SecurityMaster-Api",
+      "Tags": ["blue","loc:/api/securitymaster/v1"],
+      "Instances": [
+        {
+          "Id": "_api_securitymaster_v1_aecastle01rmq01.awsdev.ezesoftcloud.com_9033",
+          "Dc": "local",
+          "Tags":["blue","loc:/api/securitymaster/v1"],
+          "Address": "aecastle01rmq01.awsdev.ezesoftcloud.com",
+          "Port": "9033",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "Streaming-Api",
+      "Tags": ["blue","loc:/api/streaming/v1"],
+      "Instances": [
+        {
+          "Id": "_api_streaming_v1_aecastle01rmq01.awsdev.ezesoftcloud.com_9035",
+          "Dc": "local",
+          "Tags":["blue","loc:/api/streaming/v1"],
+          "Address": "aecastle01rmq01.awsdev.ezesoftcloud.com",
+          "Port": "9035",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "Trading-Api",
+      "Tags": ["blue","loc:/api/trading/v1"],
+      "Instances": [
+        {
+          "Id": "_api_trading_v1_aecastle01rmq01.awsdev.ezesoftcloud.com_9037",
+          "Dc": "local",
+          "Tags":["blue","loc:/api/trading/v1"],
+          "Address": "aecastle01rmq01.awsdev.ezesoftcloud.com",
+          "Port": "9037",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "Valuation-Api",
+      "Tags": ["blue","loc:/api/valuation/v1"],
+      "Instances": [
+        {
+          "Id": "_api_valuation_v1_aecastle01rmq01.awsdev.ezesoftcloud.com_9039",
+          "Dc": "local",
+          "Tags":["blue","loc:/api/valuation/v1"],
+          "Address": "aecastle01rmq01.awsdev.ezesoftcloud.com",
+          "Port": "9039",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "WebApp",
+      "Tags": ["loc:/app"],
+      "Instances": [
+        {
+          "Id": "_app_8081",
+          "Dc": "local",
+          "Tags":["loc:/app"],
+          "Address": "aecastle01gwy01.awsdev.ezesoftcloud.com",
+          "Port": "8081",
+          "Status": "passing"
+        },
+        {
+          "Id": "_app_8081",
+          "Dc": "local",
+          "Tags":["loc:/app"],
+          "Address": "aecastle01gwy02.awsdev.ezesoftcloud.com",
+          "Port": "8081",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "WebUI-Api",
+      "Tags": ["blue","loc:/api","path:/api"],
+      "Instances": [
+        {
+          "Id": "_api_aecastle01rmq01.awsdev.ezesoftcloud.com_9041",
+          "Dc": "local",
+          "Tags":["blue","loc:/api","path:/api"],
+          "Address": "aecastle01rmq01.awsdev.ezesoftcloud.com",
+          "Port": "9041",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "app-cloud",
+      "Tags": ["loc:/app/cloud"],
+      "Instances": [
+        {
+          "Id": "_app_cloud_aecastle01gwy01_3050",
+          "Dc": "local",
+          "Tags":["loc:/app/cloud"],
+          "Address": "aecastle01gwy01.awsdev.ezesoftcloud.com",
+          "Port": "3050",
+          "Status": "passing"
+        },
+        {
+          "Id": "_app_cloud_aecastle01gwy02_3050",
+          "Dc": "local",
+          "Tags":["loc:/app/cloud"],
+          "Address": "aecastle01gwy02.awsdev.ezesoftcloud.com",
+          "Port": "3050",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "consul",
+      "Tags": [],
+      "Instances": [
+        {
+          "Id": "consul",
+          "Dc": "local",
+          "Tags":[],
+          "Address": "10.164.48.206",
+          "Port": "8300",
+          "Status": "passing"
+        },
+        {
+          "Id": "consul",
+          "Dc": "local",
+          "Tags":[],
+          "Address": "10.164.49.203",
+          "Port": "8300",
+          "Status": "passing"
+        },
+        {
+          "Id": "consul",
+          "Dc": "local",
+          "Tags":[],
+          "Address": "10.164.50.215",
+          "Port": "8300",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "exhaust-pipe-collector",
+      "Tags": ["loc:/api/exhaust/v1/collection"],
+      "Instances": [
+        {
+          "Id": "exhaust-pipe-collector-2-63984--api-exhaust-v1-collection",
+          "Dc": "local",
+          "Tags":["loc:/api/exhaust/v1/collection"],
+          "Address": "aecastle01ran01.awsdev.ezesoftcloud.com",
+          "Port": "63984",
+          "Status": "passing"
+        },
+        {
+          "Id": "exhaust-pipe-collector-3-63984--api-exhaust-v1-collection",
+          "Dc": "local",
+          "Tags":["loc:/api/exhaust/v1/collection"],
+          "Address": "aecastle01ran02.awsdev.ezesoftcloud.com",
+          "Port": "63984",
+          "Status": "passing"
+        },
+        {
+          "Id": "exhaust-pipe-collector-1-63984--api-exhaust-v1-collection",
+          "Dc": "local",
+          "Tags":["loc:/api/exhaust/v1/collection"],
+          "Address": "aecastle01ran03.awsdev.ezesoftcloud.com",
+          "Port": "63984",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "exhaust-pipe-ims-capture",
+      "Tags": ["loc:/app/exhaust/module"],
+      "Instances": [
+        {
+          "Id": "exhaust-pipe-ims-capture-2-49786--app-exhaust-module",
+          "Dc": "local",
+          "Tags":["loc:/app/exhaust/module"],
+          "Address": "aecastle01ran01.awsdev.ezesoftcloud.com",
+          "Port": "49786",
+          "Status": "passing"
+        },
+        {
+          "Id": "exhaust-pipe-ims-capture-3-49786--app-exhaust-module",
+          "Dc": "local",
+          "Tags":["loc:/app/exhaust/module"],
+          "Address": "aecastle01ran02.awsdev.ezesoftcloud.com",
+          "Port": "49786",
+          "Status": "passing"
+        },
+        {
+          "Id": "exhaust-pipe-ims-capture-1-49786--app-exhaust-module",
+          "Dc": "local",
+          "Tags":["loc:/app/exhaust/module"],
+          "Address": "aecastle01ran03.awsdev.ezesoftcloud.com",
+          "Port": "49786",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "ims",
+      "Tags": ["loc:/ims"],
+      "Instances": [
+        {
+          "Id": "_ims_aecastle01gwy01_8080",
+          "Dc": "local",
+          "Tags":["loc:/ims"],
+          "Address": "aecastle01gwy01.awsdev.ezesoftcloud.com",
+          "Port": "8080",
+          "Status": "passing"
+        },
+        {
+          "Id": "_ims_aecastle01gwy02_8080",
+          "Dc": "local",
+          "Tags":["loc:/ims"],
+          "Address": "aecastle01gwy02.awsdev.ezesoftcloud.com",
+          "Port": "8080",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "valuation-stack-ms-beta-lb",
+      "Tags": ["loc:/api/ms-beta/v1"],
+      "Instances": [
+        {
+          "Id": "valuation-stack-ms-beta-lb-1-8677--api-ms-beta-v1",
+          "Dc": "local",
+          "Tags":["loc:/api/ms-beta/v1"],
+          "Address": "aecastle01ran03.awsdev.ezesoftcloud.com",
+          "Port": "8677",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "valuation-stack-ms-config-lb",
+      "Tags": ["loc:/api/ms-config/v1"],
+      "Instances": [
+        {
+          "Id": "valuation-stack-ms-config-lb-1-8680--api-ms-config-v1",
+          "Dc": "local",
+          "Tags":["loc:/api/ms-config/v1"],
+          "Address": "aecastle01ran02.awsdev.ezesoftcloud.com",
+          "Port": "8680",
+          "Status": "passing"
+        }
+      ]
+    },
+    {
+      "Name": "valuation-stack-ms-var-lb",
+      "Tags": ["loc:/api/ms-var/v1"],
+      "Instances": [
+        {
+          "Id": "valuation-stack-ms-var-lb-1-8678--api-ms-var-v1",
+          "Dc": "local",
+          "Tags":["loc:/api/ms-var/v1"],
+          "Address": "aecastle01ran02.awsdev.ezesoftcloud.com",
+          "Port": "8678",
+          "Status": "passing"
+        }
+      ]
+    }
+  ]
+}
