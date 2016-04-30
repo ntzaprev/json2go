@@ -15,17 +15,17 @@ import (
 	
 type consulServices struct{
 	Datacenters [] string `json:"datacenters"`
-	Services [] service `json:"services"`
+	Services [] *service `json:"services"`
 }
 
 type service struct{
 	Name string `json:"Name"`
 	Tags [] string `json:"Tags"`
-	Instances [] instance`json:"Instances"`	
+	Instances [] *instance`json:"Instances"`	
 } 
 
 type instance struct{
-    Id string `json:"Id"`
+    ID string `json:"Id"`
 	Dc string `json:"Dc"`
 	Tags [] string `json:"Tags"`
 	Address string `json:"Address"`
@@ -67,10 +67,8 @@ func main (){
            p.Tags = append(p.Tags, s.Tags...)
            p.Instances = append(p.Instances, s.Instances...)
            //fmt.Printf("Dup Service: %s:\nTags: %v\nInstances:%v\n",s.Name,  services[s.Name].Tags, services[s.Name].Instances)
-        } else {         
-           //Copy the struct or we get into a sea of trouble
-           ls := s
-           lservices[s.Name] = &ls   
+        } else {               
+           lservices[s.Name] = s   
            //fmt.Printf("Service: %s:\nTags: %v\nInstances:%v\n",s.Name,  services[s.Name].Tags, services[s.Name].Instances)       
         }        
     }
@@ -83,7 +81,7 @@ func main (){
     
     w,b := getJoinDcLists()
     fmt.Printf("\nWhite\t%v",w)
-    fmt.Printf("\nBlack\t%v",b)
+    fmt.Printf("\nBlack\t%v\n",b)
     
     ok,err := filepath.Match("*l*","[local]")
     if ok{
@@ -196,7 +194,7 @@ func isInstanceMatchingAnyPattern(ins instance, patterns []servicePattern) bool 
     return false  
 }
 
-func getUpstreamServerDefinitions(ins []instance){
+func getUpstreamServerDefinitions(ins []instance) {
     sort.Sort(byString(ins))
     var svs []string
     for _,in := range ins{
